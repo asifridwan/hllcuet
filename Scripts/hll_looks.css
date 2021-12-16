@@ -21,7 +21,7 @@
 .navbar-links{
     display: flex;
     justify-content: space-around;
-    width: 52%;
+    width: 45%;
 }
 .navbar-links li{
     list-style: none;
