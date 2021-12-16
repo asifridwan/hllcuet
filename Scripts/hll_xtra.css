@@ -1,0 +1,417 @@
+/* About Page */
+#bgm{
+    font-family: 'Muli', sans-serif;
+    background: url('../Assests/about1.jpg') no-repeat fixed;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding-bottom: 28px;
+}
+#bgm h1, #bgm_2 h1, #contact h1{
+    padding-top: 25px;
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#bgm p, #bgm_2 p, #contact p{
+    margin-top: 22px;
+    font-size: 18px;
+    margin-left: 185px;
+    margin-right: 185px;
+}
+#bgm_2{
+    font-family: 'Muli', sans-serif;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 100%);
+    padding-bottom: 22px;
+    color: #181818;
+}
+.highlight{
+    font-size: 20px;
+    font-weight: 600;
+}
+.list{
+    margin-top: 8px;
+    font-size: 19px;
+    margin-left: 210px;
+    margin-right: 210px;
+}
+#contact{
+    font-family: 'Muli', sans-serif;
+    background: url('../Assests/about2.jpg') no-repeat fixed;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding-bottom: 25px;
+}
+#contact ul{
+    margin-top: 8px;
+    font-size: 16px;
+    margin-left: 210px;
+    margin-right: 210px;
+    list-style: none;
+}
+#contact li{
+    margin-top: 2%;
+}
+#contact i{
+    font-size: 22px;
+    padding-right: 1%;
+}
+.lighthigh{
+    font-size: 18px;
+    font-weight: 600;
+}
+#contact a{
+    text-decoration: none;
+}
+#contact a:hover{
+    font-size: 20px;
+    font-weight: 600;
+    color: turquoise;
+    transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width:768px){
+    #bgm h1, #bgm_2 h1, #contact h1{
+        font-size: 28px;
+    }
+    #bgm p, #bgm_2 p, #contact p{
+        font-size: 14px;
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+    .highlight{
+        font-size: 14px;
+    }
+    .list{
+        font-size: 13px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    #contact ul{
+        font-size: 12px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    #contact i{
+        font-size: 16px;
+    }
+    .lighthigh{
+        font-size: 15px;
+    }
+}
+/*Event Page*/
+#events_comingup{
+    font-family: 'Muli', sans-serif;
+    background: url('../Assests/sbg3.jpg') no-repeat fixed;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 25px;
+}
+#events_comingup h1{
+    padding-top: 25px;
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+#event-card{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+#event-card h3{
+    font-size: 28px;
+    font-weight: 300;
+    padding: 4px;
+}
+#event-card p{
+    padding: 8px;
+    font-size: 16px;
+}
+@media screen and (max-width:768px){
+    #events_comingup h1{
+        font-size: 26px;
+    }
+    #event-card{
+        width: 260px;
+    }
+    #event-card h3{
+        font-size: 16px;
+    }
+    #event-card p{
+        font-size: 12px;
+    }
+}
+/*Newsfeed Page*/
+#fb_post h1, #blog_post h1{
+    padding-top: 25px;
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#blog_post h1{
+    color: white;
+}
+#blog_post{
+    background: linear-gradient(180deg, rgba(140,227,255,1) 0%, rgba(9,93,187,1) 95%);
+    padding-bottom: 25px;
+}
+/*Login Page*/
+#signin{
+    font-family: 'Rubik', sans-serif;
+    height: 720px;
+    padding-bottom: 25px;
+    background: url('../Assests/sbg1.jpg') no-repeat fixed;
+    background-position: center;
+    background-size: cover;
+}
+#signin-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background: white;
+    border-radius: 10px;
+}
+#signin-form h1{
+    text-align: center;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid silver;
+    font-size: 40px;
+    font-weight: 800;
+}
+#signin-form form{
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: 0.5s;
+}
+.txt_field input:focus ~ label, .txt_field input:valid ~ label{
+    top: -5px;
+    color: #2691d9;
+}
+.txt_field input:focus ~ span::before, .txt_field input:valid ~ span::before{
+    width: 100%;
+}
+.pass{
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    font-size: 14px;
+    cursor: pointer;
+}
+.pass:hover{
+    transition: 0.3s ease-in-out;
+    color: #2691d9;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    border-color: #2691d9;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+input[type="submit"]:hover{
+    background: #0e6cdb;
+    border-color: #0e6cdb;
+    transition: 0.5s;
+}
+.signup_link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+.signup_link a{
+    color: #2691d9;
+    text-decoration: none;
+}
+@media screen and (max-width:450px){
+    #signin-form{
+        width: 275px;
+    }
+    #signin-form h1{
+        font-size: 22px;
+    }
+    #signin-form form{
+        padding: 0 30px;
+    }
+    .txt_field input, .txt_field label{
+        font-size: 13px;
+    }
+    input[type="submit"]{
+        font-size: 16px;
+    }
+    .signup_link, .pass{
+        font-size: 12px;
+    }
+}
+/*Registration Page*/
+#signup{
+    background: url('../Assests/sbg4.jpg') no-repeat fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+    height: 720px;
+    padding-bottom: 25px;
+}
+#signup h1{
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 25px;
+    color: white;
+}
+.wrapper{
+    max-width: 400px;
+    border-radius: 15px;
+    margin: auto;
+    background: white;
+    margin-top: 25px;
+    box-sizing: border-box;
+    padding: 40px;
+}
+#reg-ip, #gender{
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 5px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid;
+    margin: 5px;
+}
+#reg-btn{
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#signup h2{
+    font-size: 20px;
+    font-weight: 200;
+    padding-top: 45px;
+    color: white;
+}
+#signup a{
+    text-decoration: none;
+    font-weight: 600;
+}
+#signup a:hover, #reg-btn:hover{
+    color: #2196f3;
+    transition: 1s ease-out;
+}
+@media screen and (max-width:768px){
+    #signup h1{
+        font-size: 26px;
+    }
+    #signup h2{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:480px){
+    .wrapper{
+        max-width: 250px;
+        padding: 25px;
+    }
+    #reg-ip, #gender, #reg-btn{
+        font-size: 13px;
+    }
+}
+/*Books Page*/
+#library{
+    font-family: 'Muli', sans-serif;
+    background: url('../Assests/sbg2.jpg') no-repeat fixed;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 25px;
+}
+#library h1{
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 25px;
+    color: white;
+}
+#book_info{
+    background-color: white;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+}
+#book_info2{
+    background: #181818;
+    color: white;
+}
+#book_info2 p{
+    padding: 8px;
+}
+.title{
+    font-size: 18px;
+    font-weight: 500;
+}
+.author{
+    font-size: 15px;
+    font-weight: 100;
+}
+.title, .author{
+    padding: 2px;
+}
+#book_info2 button{
+    margin-top: 18px;
+}
+#book_modal_content{
+    padding: 25px;
+}
+#book_modal_content p{
+    padding: 8px;
+}
+#book_modal_content a{
+    text-decoration: none;
+}
+#book_modal_content a:hover{
+    color: #2196f3;
+    transition: 1s ease-out;
+}
+#book_modal_img{
+    padding-bottom: 25px;
+}
